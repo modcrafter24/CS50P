@@ -6,5 +6,3 @@ def main():
     print(convert(input_string))
 
 main()
-
-
