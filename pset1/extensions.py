@@ -10,7 +10,7 @@ extension_dict = {
 
 common_default = 'application/octet-stream'
 
-extension = input("Please enter File Name: ").rpartition('.')[-1].lower()
+extension = input("Please enter File Name: ").rpartition('.')[-1].lower().strip()
 
 print(extension_dict.get(extension, common_default))
 
