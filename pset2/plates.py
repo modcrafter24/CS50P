@@ -18,6 +18,9 @@ def is_valid(s):
         if c.isdigit():
             num_str += c
         if len(num_str) > 0:
+            if not(c.isdigit()):
+                return False
+        if len(num_str) > 0:
             if num_str[0] == '0':
                 return False
             if not(s[-1].isdigit()):
