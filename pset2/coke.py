@@ -1,14 +1,14 @@
 accepted_coins = [25, 10, 5]
 
-change = 0
+coin_sum = 0
 
 while True:
     coin = int(input("Insert Coin: "))
     if coin in accepted_coins:
-        change += coin
-    if change >= 50:
+        coin_sum += coin
+    if coin_sum >= 50:
         break
-    print("Amount Due: " + str(change))
+    print("Amount Due: " + str(50 - coin_sum))
     
 
-print("Change Owed: " + str(change - 50))
+print("Change Owed: " + str(coin_sum - 50))
