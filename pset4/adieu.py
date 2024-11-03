@@ -1,6 +1,6 @@
 import inflect
+name_list = []
 while True:
-    name_list = []
     try:
         name_list.append(input("Name: "))
     except EOFError:
