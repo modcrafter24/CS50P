@@ -2,6 +2,9 @@ from pyfiglet import Figlet
 from random import choice
 import sys
 
+figlet = Figlet()
+font_list = figlet.getFonts()
+
 if len(sys.argv) == 1:
     font = choice(font_list)
 elif len(sys.argv) == 2:
@@ -17,8 +20,6 @@ elif len(sys.argv) == 3:
 elif len(sys.argv) > 3:
     sys.exit("Too many arguments")
 
-figlet = Figlet()
-font_list = figlet.getFonts()
 figlet.setFont(font=font)
 
 print(figlet.renderText(input("Input: ")))
